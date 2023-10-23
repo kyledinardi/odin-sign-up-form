@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 37vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 63vw;
+  background-color: silver;
+}
+
+.container > * {
+  padding-left: 50px;
+}
+
+form {
+  background-color: white;
+}
