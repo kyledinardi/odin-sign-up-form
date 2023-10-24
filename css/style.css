@@ -6,7 +6,6 @@
 body {
   display: flex;
   height: 100vh;
-  overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -42,6 +41,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 footer {
@@ -60,7 +60,7 @@ footer {
   justify-content: center;
   gap: 35px;
   width: 63vw;
-  background-color: silver;
+  background-color: #30B700 ;
 }
 
 h2,
@@ -70,7 +70,7 @@ form {
 }
 
 form {
-  background-color: white;
+  background-color: #ff6347 ;
 }
 
 form h2 {
@@ -82,17 +82,33 @@ input{
   display: block;
 }
 
-.inputs {
-  display: flex;
-  flex-wrap: wrap;
+label {
+  font-size: .8rem;
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.inputs div {
-  margin: 0 75px 25px 0
+.form-controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.control {
+  margin: 0 75px 25px 0;
+  flex: auto;
 }
 
 input {
-  width: 20vw;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px black solid;
 }
 
 button {
