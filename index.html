@@ -6,6 +6,7 @@
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/passconfirm.js" defer></script>
 </head>
 <body>
   <div class="sidebar">
@@ -37,36 +38,37 @@
         <div class="row">
           <div class="control">
             <label for="first">FIRST NAME</label>
-            <input type="text" name="first_name" id="first" required>
+            <input type="text" name="first_name" id="first">
           </div>
           <div class="control">
             <label for="last">LAST NAME</label>
-            <input type="text" name="last_name" id="last" required>
+            <input type="text" name="last_name" id="last">
           </div>
         </div>
         <div class="row">
           <div class="control">
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email">
           </div>
           <div class="control">
             <label for="phone">PHONE NUMBER</label>
-            <input 
-            type="tel" 
-            name="phone_number" 
-            id="phone" 
-            required 
-            pattern="\d{3}-?\d{3}-?\d{4}">
+            <input type="tel" name="phone_number" id="phone">
           </div>
         </div>
         <div class="row">
           <div class="control">
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" required>
+            <input 
+              class=""
+              type="password" 
+              name="password" 
+              id="password" 
+              required>
+            <span class="password_help"></span>
           </div>
           <div class="control">
             <label for="confirm_password">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm_password" required>
+            <input class="" type="password" id="confirm_password" required>
           </div>
         </div>
       </div>
